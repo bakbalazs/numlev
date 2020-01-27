@@ -8,11 +8,16 @@ def main():
     normInfR = list()
     norm1A = list()
     norm1R = list()
+    R = list()
 
     for i in range(n):
         A.append(list(map(float, input().strip().split(' '))))
 
-    R = [[0.0 for i in range(n * 2)] for j in range(n)]
+    for _ in range(n):
+        li = list()
+        for _ in range(n * 2):
+            li.append(0.0)
+        R.append(li)
 
     for i in range(n):
         for j in range(n):

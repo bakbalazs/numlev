@@ -37,8 +37,9 @@ def main():
         print("fail")
     else:
         for i in range(n):
-            for j in range(n):
-                print("{:.12f}".format(res[i][j]))
+            for j in range(i + 1):
+                print("{:.12f}".format(res[i][j]), end=" ")
+            print("\n", end="")
 
 
 if __name__ == '__main__':
